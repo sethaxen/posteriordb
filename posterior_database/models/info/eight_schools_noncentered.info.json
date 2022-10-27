@@ -18,6 +18,10 @@
   "model_implementations": {
     "stan": {
       "model_code": "models/stan/eight_schools_noncentered.stan"
+    },
+    "turing": {
+      "model_code": "models/turing/eight_schools_noncentered/model.jl",
+      "model_environment": "models/turing/eight_schools_noncentered/Project.toml"
     }
   },
   "added_by": "Mans Magnusson",
