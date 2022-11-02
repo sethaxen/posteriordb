@@ -1,4 +1,4 @@
-module EightSchoolsNoncentered
+module TuringEightSchoolsNoncentered
 
 using FillArrays
 using LinearAlgebra
@@ -24,7 +24,7 @@ function model(data::AbstractDict{String})
     J = data["J"]
     sigma2 = data["sigma"].^2
     y = data["y"]
-    return EightSchoolsModel(J, sigma2) | (; y=y)
+    return EightSchoolsNoncenteredModel(J, sigma2)() | (; y=y)
 end
 
 end # module
