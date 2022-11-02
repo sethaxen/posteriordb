@@ -22,7 +22,7 @@ end
 
 function model(data::AbstractDict{String})
     J = data["J"]
-    sigma2 = data["sigma"].^2
+    sigma2 = data["sigma"] .^ 2
     y = data["y"]
     return EightSchoolsNoncenteredModel(J, sigma2)() | (; y=y)
 end
